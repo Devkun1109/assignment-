@@ -1,5 +1,5 @@
 const express = require('express');
-const { summary, category } = require('../controllers/analytics.controller');
+const { summary, category,recent,monthly } = require('../controllers/analytics.controller');
 const { authenticate } = require('../middlewares/auth.middleware');
 const { authorize } = require('../middlewares/roles.middleware');
 
