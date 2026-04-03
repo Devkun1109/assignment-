@@ -18,10 +18,10 @@ const createTransaction = async (data, user) => {
 
 
 // 🔹 GET (with filters + pagination + soft delete)
-const getTransactions = async (filters, user) => {
-  let {
-    page = 1,
-    limit = 10,
+const getTransactions=async(filters,user)=>{
+  let{
+    page=1,
+    limit=10,
     type,
     category_id,
     startDate,
