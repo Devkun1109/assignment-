@@ -20,6 +20,11 @@ app.use('/api/analytics', analyticsRoutes);
 const { errorHandler } = require('./middlewares/error.middleware');
 app.use(errorHandler);
 
+
+const swaggerUi = require('swagger-ui-express');
+const swaggerSpec = require('./config/swagger');
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.get('/',(req,res)=>{
     res.send('API is running');
 });
