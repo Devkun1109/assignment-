@@ -10,7 +10,9 @@ const registerUser = async ({ name, email, password, role = 'viewer' }) => {
   );
 
   if (roleRes.rows.length === 0) {
-    throw new Error('Invalid role');
+    const err = new Error('Invalid role');
+    err.status = 400;
+    throw err;
   }
 
   const role_id = roleRes.rows[0].id;
@@ -37,7 +39,9 @@ const loginUser = async ({ email, password }) => {
   );
 
   if (result.rows.length === 0) {
-    throw new Error('User not found');
+    const err = new Error('User not found');
+    err.status = 404;
+    throw err;
   }
 
   const user = result.rows[0];
