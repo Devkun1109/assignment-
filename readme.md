@@ -132,12 +132,12 @@ http://localhost:5000/api-docs
 ## 🔑 Environment Variables
 
 ```id="env12"
-PORT=
-DB_HOST=
-DB_PORT=
-DB_USER=
-DB_PASSWORD=
-DB_NAME=
+PORT=5000
+DB_HOST=localhost
+DB_PORT=postgres 
+DB_USER=postgres
+DB_PASSWORD=z
+DB_NAME=finance_db
 JWT_SECRET=
 ```
 
