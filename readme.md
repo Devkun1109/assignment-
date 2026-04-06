@@ -146,8 +146,8 @@ JWT_SECRET=
 ## 🧪 Demo Credentials
 
 ```id="demo1"
-Email: admin@test.com
-Password: 123456
+Email: dev@test.com
+Password: 12345
 ```
 
 ---
